@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/8f5eccc46b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <ul id="list">
+                <li><a href=""><i class="fa fa-home"></i>HOME</a></li>
+                <li><a href=""><i class="fa fa-user"></i>ABOUT</a></li>
+                <li><a href=""><i class="fa fa-clone"></i>SERVICE</a></li>
+                <li><a href=""><i class="fa fa-handshake-o"></i>TESTMOIL</a></li>
+                <li><a href=""><i class="fa fa-phone"></i>CONTACT</a></li>
+                <img src="arrow.png" alt="" id="closeMenu">
+            </ul>
+            <img src="menu.png" alt="" id="sideMenu">
+        </div>
+    </div>
+    <section id="banner">
+        <div class="banner-text">
+            <h1>WELCOME TO <span> THE LEBENDRY </span>TEXT<br> YOU WANT TO ADD</h1>
+            <button type="button">CLICK ON ME</button>
+        </div>
+    </section>
+    <script>
+      var display = document.getElementById("sideMenu")
+      var hidden = document.getElementById("closeMenu")
+      var list = document.getElementById("list")
+
+      display.onclick = function(){
+        list.style.visibility = "visible";
+        list.style.right = "0%";
+      }
+      hidden.onclick = function(){
+        list.style.right = "-50%";
+      }
+
+    </script>
+
+
+    
+</body>
+</html>
